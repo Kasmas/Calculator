@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
-#include "calc.c"
+#include "calc.h"
 
  int main() 
 {
@@ -18,45 +17,44 @@
 		printf("4. delenye\n");
 		printf("ESC. Exit\n");
 		scanf("%d", &a);
-	    key= a;
+	    key = a;
 	    
 	switch (key)
 	{
-		case '1':
-			printf ("введите первое занчение:");
+		case 1:
+			printf ("Enter first value:");
 			scanf ("%d", &b);
-			printf ("введите второе занчение:");
+			printf ("Enter second value:");
 			scanf ("%d", &c);
-			d= slozhenye(b, c);
+			d = slozhenye(b, c);
 			printf ("%d\n", d);
 			break;
-		case '2':
-			printf ("введите первое занчение:");
+		case 2:
+			printf ("Enter first value:");
 			scanf ("%d", &b);
-			printf ("введите второе занчение:");
+			printf ("Enter second value:");
 			scanf ("%d", &c);
-			d= vichitanye(b, c);
+			d = vichitanye(b, c);
 			printf ("%d\n", d);
 			break;
-		case '3':
-			printf ("введите первое занчение:");
+		case 3:
+			printf ("Enter first value:");
 			scanf ("%d", &b);
-			printf ("введите второе занчение:");
+			printf ("Enter second value:");
 			scanf ("%d", &c);
-			d= umnozhenye(b, c);
+			d = umnozhenye(b, c);
 		    printf ("%d\n", d);
 			break;
-		case '4':
-			printf ("введите первое занчение:");
+		case 4:
+			printf ("Enter first value:");
 			scanf ("%d", &b);
-			printf ("введите второе занчение:");
+			printf ("Enter second value:");
 			scanf ("%d", &c);
-			d= delenye(b, c);
+			d = delenye(b, c);
 			printf ("%d\n", d);
 			break;
-		
 	}
-
-	}while (key != 27);
+	}
+    while (key != 27);
 	return 0;
 }
