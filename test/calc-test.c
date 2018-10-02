@@ -1,5 +1,6 @@
 #include <ctest.h>
 #include <../src/calc.h>
+#pragma once
 
 CTEST(slozhenie_polozh_otric, slozhenye)
 {
