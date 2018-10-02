@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CALC_H
+#define CALC_H
 
 int slozhenye(int A, int B) {
 	return A + B;
@@ -20,3 +21,4 @@ int delenye(int A, int B) {
 	return A / B;
 }
 
+#endif
