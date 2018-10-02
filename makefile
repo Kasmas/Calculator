@@ -33,5 +33,3 @@ clean :
 	@rm -rf build/*.o build/test/*.o
 	@rm bin/calc bin/calc-test
 	@echo "All files have been cleaned."
-
--include build/*.d
