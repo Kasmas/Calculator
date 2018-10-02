@@ -8,7 +8,7 @@ all :
 bin/main1 : build/main1.o
 	gcc build/main1.o -o bin/main1 $(CFLAGS)
 
-build/main.o : src/main1.c src/calc.h
+build/main1.o : src/main1.c src/calc.h
 	gcc -c src/main1.c -o build/main1.o $(CFLAGS)
 
 test:
